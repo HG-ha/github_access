@@ -1,14 +1,3 @@
-# coding : utf-8
-"""
-作者：Yiming
-创建时间：2023/6/16 14:25
-GitHub 主页：https://github.com/HG-ha
-个人网站：https://api.wer.plus
-
-一铭API是一个免费提供大量实用接口的API网站
-
-如果您在使用程序的过程中发现了任何问题或有任何建议，请随时联系作者。
-"""
 import requests
 import time
 
@@ -55,3 +44,5 @@ if __name__ == "__main__":
         run()
     except Exception as e:
         print(f"ERROR: {e}")
+    except KeyboardInterrupt:
+        print("Goodbye!")
