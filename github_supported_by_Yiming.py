@@ -26,9 +26,11 @@ def run():
                         f.write("".join(content))
                 except PermissionError:
                     print("ERROR: Please run as administrator")
+                    time.sleep(2)
                     return
                 except Exception as e:
                     print(f"ERROR: {e}")
+                    time.sleep(2)
                     return
         time.sleep(10)
 
@@ -39,10 +41,13 @@ if __name__ == "__main__":
     This doesn't change anything else
 
     Welcome to the Yiming API: https://api.wer.plus
+    Github: https://github.com/HG-ha/github_access
     """)
     try:
         run()
     except Exception as e:
         print(f"ERROR: {e}")
+        time.sleep(2)
     except KeyboardInterrupt:
         print("Goodbye!")
+        time.sleep(2)
