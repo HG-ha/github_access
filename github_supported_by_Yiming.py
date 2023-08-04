@@ -13,6 +13,7 @@ def run():
                 hosts_path = r'C:\Windows\System32\drivers\etc\hosts'
 
                 # 读取 hosts 文件内容
+                # 这里如果报错GBK的话，应指定编码
                 with open(hosts_path, 'r') as f:
                     content = f.readlines()
                 
